@@ -16,10 +16,10 @@ clf.fit(X, y)
 from sklearn.externals import joblib
 
 # Save classifier specs to new file
-joblib.dump(clf, 'iris_clf/iris_clf.pkl')
+joblib.dump(clf, '3_iris_clf.pkl')
 
 # Load classifer from file
-clf2 = joblib.load('iris_clf/iris_clf.pkl')
+clf2 = joblib.load('3_iris_clf.pkl')
 
 
 # # Import pickle to persist classifier
