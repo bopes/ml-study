@@ -31,7 +31,6 @@ plt.ylim(0, 1.1)
 plt.show()
 
 # Solution
-
 import numpy as np
 from sklearn.model_selection import cross_val_score
 from sklearn import datasets, svm
