@@ -56,7 +56,7 @@ alphas = np.logspace(-4, -1, 6)
      .score(diabetes_X_test, diabetes_y_test)
   for alpha in alphas] # View scores for different values of alpha
 
-# Sparcity
+# Sparcity - insufficient observations for the number of features
 # Some features have little impact on the result. It is good to reduce the coefficients on these features to mitigate the curse of dimensionality
 # Lasso model will reduce the values of these coefs to 0, if required. Is a more aggressive approach than the above Ridge model
 regr = linear_model.Lasso()
