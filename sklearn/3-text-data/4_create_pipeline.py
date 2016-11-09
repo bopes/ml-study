@@ -12,3 +12,5 @@ text_clf = Pipeline([
   ('tfidf', TfidfTransformer() ),
   ('clf',   MultinomialNB()    ),
 ])
+
+text_clf = text_clf.fit(twenty_train.data, twenty_train.target)
